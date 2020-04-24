@@ -8,11 +8,15 @@ To execute, simply write the shell script file name, once the file has execute p
 
 
 
+
+
 The first line of the shell script file begins with a ***she-bang ( #! )***, followed by the full path where the shell interpreter is located. This path, tells the operating system that this file is a set of commands to fed into the interpreter indicated.
 
 Note that if the path given at the **she-bang** is incorrect, then an error message e. g. **Command not found**, may be the result of the script execution.
 
 It is common to name the shell script with the **.sh** extension.
+
+
 
 
 
@@ -23,6 +27,8 @@ The first line may look like this:
 ``````
 
 *Adding Comments:* Any text following the ***#*** is considered a comment.
+
+
 
 
 
@@ -42,15 +48,16 @@ This response shows the full execution path of the shell interpreter. Make sure 
 
 
 
+
+
 ## Exercise
 
 Use the **echo** command to print the line **"Hello, World !"**.
 
 
 
+
+
 ## Solution
 
-Check code: 
-
-[hello_world.sh]: ./hello_world.sh
-
+Check code: [hello_world.sh](./hello_world.sh)
