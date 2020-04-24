@@ -1,5 +1,9 @@
 # 01_hello_world
 
+### Explanation
+
+
+
 The tutorial discusses shell programming in general with focus on **Bash** ( ***Bourne Again Shell*** ) shell as the main shell interpreter.
 
 Shell programming can be accomplished by directly executing shell commands at the shell prompt or by storing them in the order of execution, in text file, called a **shell script**, and then executing the shell script.
@@ -28,26 +32,60 @@ The first line may look like this:
 
 To find out what is currently active shell, and what is its path, type the following command at the shell prompt (sample responses follow):
 
-**```ps | grep $$```**
+```bash
+ps | grep $$
 
-```8583 pts/0	00:00:00 bash```
+>> 8583 pts/0	00:00:00 bash
+```
+
+
 
 This response shows that the shell you are using is of type **bash**, next find out the full path of the shell interpreter.
 
-**```which bash```**
+```bash
+which bash
 
-```/bin/bash```
+>> /bin/bash
+```
+
+
 
 This response shows the full execution path of the shell interpreter. Make sure that the **she-bang** line at the beginning of your script, matches this same execution path.
 
 
 
-## Exercise
+---
 
-Use the **echo** command to print the line **"Hello, World !"**.
+### Exercise
+
+Use the **echo** command to print the line **"Hello World !"**.
 
 
 
-## Solution
+---
+
+### Expected Output
+
+```bash
+./hello_world.sh
+
+>> Hello World!
+```
+
+
+
+---
+
+### Solution
 
 Check code: [hello_world.sh](./hello_world.sh)
+
+```bash
+#!/bin/bash
+
+# The '#!' is called 'she-bang'
+
+# Text to the right of a '#' is treated as a comment
+echo "Hello World !"
+```
+
