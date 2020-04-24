@@ -1,2 +1,2 @@
 # bash_tutorials
-Tutorial for BASh or Shell Scripting.
+Tutorial for **B**ourne **A**gain **Sh**ell ( **BASh** ) or Shell Scripting.
